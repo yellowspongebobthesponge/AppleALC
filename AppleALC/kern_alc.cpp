@@ -695,28 +695,34 @@ IOReturn AlcEnabler::performPowerChange(IOService *hdaDriver, uint32_t from, uin
 	return ret;
 }
 
-IOReturn AlcEnabler::initializePinConfig(IOService *hdaCodec, IOService *configDevice) {
+void AlcEnabler::patchPinConfig(IOService *hdaCodec, IORegistryEntry *configDevice) {
 	if (hdaCodec && configDevice && !hdaCodec->getProperty("alc-pinconfig-status")) {
 		uint32_t appleLayout = getAudioLayout(hdaCodec);
 		uint32_t analogCodec = 0;
 		uint32_t analogLayout = 0;
-		for (size_t i = 0, s = callbackAlc->codecs.size(); i < s; i++) {
-			if (callbackAlc->controllers[callbackAlc->codecs[i]->controller]->layout > 0) {
-				analogCodec = static_cast<uint32_t>(callbackAlc->codecs[i]->vendor) << 16 | callbackAlc->codecs[i]->codec;
-				analogLayout = callbackAlc->controllers[callbackAlc->codecs[i]->controller]->layout;
+		for (size_t i = 0, s = codecs.size(); i < s; i++) {
+			if (controllers[codecs[i]->controller]->layout > 0) {
+				analogCodec = static_cast<uint32_t>(codecs[i]->vendor) << 16 | codecs[i]->codec;
+				analogLayout = controllers[codecs[i]->controller]->layout;
 				break;
 			}
 		}
 
 		DBGLOG("alc", "initializePinConfig %s received hda " PRIKADDR ", config " PRIKADDR " config name %s apple layout %u codec %08X layout %u",
-			   safeString(hdaCodec->getName()), CASTKADDR(hdaCodec), CASTKADDR(configDevice),
-			   configDevice ? safeString(configDevice->getName()) : "(null config)", appleLayout, analogCodec, analogLayout);
+			safeString(hdaCodec->getName()), CASTKADDR(hdaCodec), CASTKADDR(configDevice),
+			configDevice ? safeString(configDevice->getName()) : "(null config)", appleLayout, analogCodec, analogLayout);
 
 		hdaCodec->setProperty("alc-pinconfig-status", kOSBooleanFalse);
 		hdaCodec->setProperty("alc-sleep-status", kOSBooleanFalse);
 
+		auto alcSelf = ADDPR(selfInstance);
+		if (!alcSelf) {
+			SYSLOG("alc", "invalid self reference");
+			return;
+		}
+
 		if (appleLayout && analogCodec && analogLayout) {
-			auto configList = OSDynamicCast(OSArray, configDevice->getProperty("HDAConfigDefault"));
+			auto configList = OSDynamicCast(OSArray, alcSelf->getProperty("HDAConfigDefault"));
 			if (configList) {
 				unsigned int total = configList->getCount();
 				DBGLOG("alc", "discovered HDAConfigDefault with %u entries", total);
@@ -730,7 +736,7 @@ IOReturn AlcEnabler::initializePinConfig(IOService *hdaCodec, IOService *configD
 					auto currCodec = OSDynamicCast(OSNumber, config->getObject("CodecID"));
 					auto currLayout = OSDynamicCast(OSNumber, config->getObject("LayoutID"));
 					if (currCodec == nullptr || currLayout == nullptr ||
-					    currCodec->unsigned32BitValue() != analogCodec || currLayout->unsigned32BitValue() != analogLayout) {
+						currCodec->unsigned32BitValue() != analogCodec || currLayout->unsigned32BitValue() != analogLayout) {
 						// Not analog or wrong entry.
 						continue;
 					}
@@ -749,7 +755,7 @@ IOReturn AlcEnabler::initializePinConfig(IOService *hdaCodec, IOService *configD
 					auto reinitBool = OSDynamicCast(OSBoolean, config->getObject("WakeVerbReinit"));
 					auto reinit = reinitBool != nullptr ? reinitBool->getValue() : false;
 					DBGLOG("alc", "current config entry has boot %d, wake %d, reinit %d", configData != nullptr,
-						   wakeConfigData != nullptr, reinitBool ? reinit : -1);
+						wakeConfigData != nullptr, reinitBool ? reinit : -1);
 
 					// Replace the config list with a new list to avoid multiple iterations,
 					// and actually fix the LayoutID number we hook in.
@@ -807,7 +813,25 @@ IOReturn AlcEnabler::initializePinConfig(IOService *hdaCodec, IOService *configD
 			}
 		}
 	}
+}
 
+IOReturn AlcEnabler::initializePinConfigTiger(IOService *hdaCodec) {
+	auto parentDevice = hdaCodec->getParentEntry(gIOServicePlane);
+	while (parentDevice) {
+		auto name = parentDevice->getName();
+		if (name && (!strcmp(name, "AppleHDAController"))) {
+			break;
+		}
+
+		parentDevice = parentDevice->getParentEntry(gIOServicePlane);
+	}
+
+	callbackAlc->patchPinConfig(hdaCodec, parentDevice);
+	return FunctionCast(initializePinConfigTiger, callbackAlc->orgInitializePinConfigTiger)(hdaCodec);
+}
+
+IOReturn AlcEnabler::initializePinConfig(IOService *hdaCodec, IOService *configDevice) {
+	callbackAlc->patchPinConfig(hdaCodec, configDevice);
 	return FunctionCast(initializePinConfig, callbackAlc->orgInitializePinConfig)(hdaCodec, configDevice);
 }
 

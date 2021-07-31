@@ -204,6 +204,11 @@ private:
 	static IOReturn performPowerChange(IOService *hdaDriver, uint32_t from, uint32_t to, unsigned int *timer);
 
 	/**
+	 *  Patches HDAConfigDefault property with desired pinconfig entry.
+	 */
+	void patchPinConfig(IOService *hdaCodec, IORegistryEntry *configDevice);
+	
+	/**
 	 *  Hooked initializePinConfig method to preserve AppleHDACodecGeneric instance on 10.4
 	 */
 	static IOReturn initializePinConfigTiger(IOService *hdaCodec);
