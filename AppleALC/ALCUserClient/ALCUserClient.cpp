@@ -22,6 +22,7 @@ const IOExternalMethodDispatch ALCUserClient::sMethods[kNumberOfMethods] = {
 	}
 };
 
+#if __MAC_OS_X_VERSION_MIN_REQUIRED > __MAC_10_4
 IOReturn ALCUserClient::externalMethod(uint32_t selector, IOExternalMethodArguments* arguments, IOExternalMethodDispatch* dispatch, OSObject* target, void* reference) {
 	if (selector >= kNumberOfMethods)
 		return kIOReturnUnsupported;
@@ -33,6 +34,7 @@ IOReturn ALCUserClient::externalMethod(uint32_t selector, IOExternalMethodArgume
 	
 	return super::externalMethod(selector, arguments, dispatch, target, reference);
 }
+#endif
 
 bool ALCUserClient::initWithTask(task_t owningTask, void* securityToken, UInt32 type, OSDictionary* properties) {
 	if (!owningTask)
