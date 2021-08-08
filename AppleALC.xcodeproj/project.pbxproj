@@ -696,7 +696,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -722,7 +721,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				VALID_ARCHS = x86_64;
 			};
 			name = Sanitize;
 		};
@@ -748,7 +746,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -807,7 +804,7 @@
 				"LDPLUSPLUS[arch=ACID32]" = "$(PROJECT_DIR)/clang32/clang-12";
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
-				VALID_ARCHS = "x86_64 ACID32";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -862,7 +859,7 @@
 				LDPLUSPLUS = "$(inherited)";
 				"LDPLUSPLUS[arch=ACID32]" = "$(PROJECT_DIR)/clang32/clang-12";
 				SDKROOT = macosx;
-				VALID_ARCHS = "x86_64 ACID32";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -940,6 +937,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(MODULE_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "x86_64 ACID32";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -1021,6 +1019,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(MODULE_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "x86_64 ACID32";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
@@ -1034,7 +1033,6 @@
 				GCC_C_LANGUAGE_STANDARD = c11;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -1047,7 +1045,6 @@
 				GCC_C_LANGUAGE_STANDARD = c11;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -1107,7 +1104,7 @@
 				"LDPLUSPLUS[arch=ACID32]" = "$(PROJECT_DIR)/clang32/clang-12";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				VALID_ARCHS = "x86_64 ACID32";
+				VALID_ARCHS = x86_64;
 			};
 			name = Sanitize;
 		};
@@ -1189,6 +1186,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(MODULE_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "x86_64 ACID32";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Sanitize;
@@ -1202,7 +1200,6 @@
 				GCC_C_LANGUAGE_STANDARD = c11;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = x86_64;
 			};
 			name = Sanitize;
 		};
@@ -1279,6 +1276,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(MODULE_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "x86_64 ACID32";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -1360,6 +1358,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(MODULE_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "x86_64 ACID32";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Sanitize;
@@ -1439,6 +1438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(MODULE_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "x86_64 ACID32";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
