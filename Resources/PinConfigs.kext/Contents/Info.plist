@@ -8370,11 +8370,25 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Goldfish64 - STAC9200 for Dell Precision 390</string>
+					<string>Goldfish64 - STAC9200 for Dell Precision 390, Latitude D520</string>
 					<key>CodecID</key>
 					<integer>2206496400</integer>
 					<key>ConfigData</key>
 					<data>AIcc8ACHHQAAhx4AAIcfQACXHPAAlx0AAJceAACXH0AA1xwQANcdEADXHiEA1x8CAOccIADnHQEA5x4QAOcfkAD3HDAA9x0BAPceoAD3H5ABBxxAAQcdEAEHHoEBBx8CARcc8AEXHQABFx4AARcfQAEnHPABJx0AASceAAEnH0A=</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>11</integer>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>AwAAAA==</data>
+					<key>Codec</key>
+					<string>Goldfish64 - STAC9205 for Dell Inspiron 1520, Latitude D630</string>
+					<key>CodecID</key>
+					<integer>2206496416</integer>
+					<key>ConfigData</key>
+					<data>AKccIACnHRAApx4hAKcfAwC3HEAAtx0QALcegQC3HwMAxxzwAMcdAADHHgAAxx9AANccEADXHQEA1x4QANcfkADnHPAA5x0AAOceAADnH0AA9xzwAPcdAAD3HgAA9x9AAUcc8AFHHQABRx4AAUcfQAFnHPABZx0AAWceAAFnH0ABdxwwAXcdAQF3HqABdx+QAYcc8AGHHQABhx4AAYcfQAIXHPACFx0AAhceAAIXH0ACJxzwAicdAAInHgACJx9A</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
