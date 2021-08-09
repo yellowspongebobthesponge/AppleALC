@@ -826,7 +826,10 @@ IOReturn AlcEnabler::initializePinConfigTiger(IOService *hdaCodec) {
 		parentDevice = parentDevice->getParentEntry(gIOServicePlane);
 	}
 
-	callbackAlc->patchPinConfig(hdaCodec, parentDevice);
+	if (parentDevice)
+		callbackAlc->patchPinConfig(hdaCodec, parentDevice);
+	else
+		SYSLOG("alc", "failed to get parent AppleHDAController instance");
 	return FunctionCast(initializePinConfigTiger, callbackAlc->orgInitializePinConfigTiger)(hdaCodec);
 }
 
