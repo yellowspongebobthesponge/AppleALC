@@ -32,7 +32,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>agasecond - Realtek ALC256 (3246) for Xiaomi Pro Enhanced 2019</string>
+					<string>ALC256 (3246) - LayoutID 69 - agasecond Realtek ALC256 (3246) for Xiaomi Pro Enhanced 2019</string>
 					<key>CodecID</key>
 					<integer>283902550</integer>
 					<key>ConfigData</key>
@@ -52,7 +52,7 @@
 					<key>CodecID</key>
 					<integer>283902569</integer>
 					<key>Comment</key>
-					<string>Custom ALC269VD for ThinkPad T430</string>
+					<string>ALC269VD - LayoutID 23 - Custom ALC269VD for ThinkPad T430</string>
 					<key>ConfigData</key>
 					<data>ASccEAEnHQEBJx6mAScfkAFHHEABRx0BAUceFwFHH5ABVxxQAVcdEAFXHiEBVx8CAXcc8AF3HQABdx4AAXcfQAGHHCABhx0QAYcegQGHHwIBlxxwAZcdEAGXHqEBlx8CAacccAGnHRABpx6hAacfAgG3HHABtx0QAbceoQG3HwIB1xxwAdcdEAHXHqEB1x8CAecccAHnHRAB5x6hAecfAgFHDAI=</data>
 					<key>FuncGroup</key>
@@ -68,9 +68,9 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>CodecID</key>
-					<integer>287143573</integer>
+					<real>287143573</real>
 					<key>Comment</key>
-					<string>Toshiba Satellite Pro C50</string>
+					<string>IDT92HD95 - LayoutID 11 - Toshiba Satellite Pro C50</string>
 					<key>ConfigData</key>
 					<data>AKccQACnHRAApx4hAKcfAQC3HCAAtx0QALcegQC3HwEAxxzwAMcdAADHHgAAxx9AANccMADXHQEA1x4QANcfkADnHBAA5x0BAOceoADnH5AA9xzwAPcdAAD3HgAA9x9AAYcc8AGHHQABhx4AAYcfQA==</data>
 					<key>FuncGroup</key>
@@ -84,7 +84,7 @@
 					<key>CodecID</key>
 					<integer>351359128</integer>
 					<key>Comment</key>
-					<string>frankiezdh - Conexant CX20632 for HP ProDesk 480 G4</string>
+					<string>CX20632 - LayoutID 23 - frankiezdh - Conexant CX20632 for HP ProDesk 480 G4</string>
 					<key>ConfigData</key>
 					<data>AZccUAGXHRABlx4hAZcfAQGnHBABpx0QAaceoQGnHwEBxxyAAccdQQHHHgEBxx8BAdccIAHXHTEB1x6BAdcfAQHXDAIB9xxAAfcdAQH3Hh8B9x+R</data>
 					<key>FuncGroup</key>
@@ -102,7 +102,7 @@
 					<key>CodecID</key>
 					<integer>351359128</integer>
 					<key>Comment</key>
-					<string>phucnguyen2411 - CX20632 HP Elitedesk 800 G5 mini</string>
+					<string>CX20632 - LayoutID 20 - phucnguyen2411 - CX20632 HP Elitedesk 800 G5 mini</string>
 					<key>ConfigData</key>
 					<data>AXcMAAG3DAAB1xwRAdcdEQHXHoEB1x8CAdcMAgHHHCABxx0RAcceAQHHHwIBpwckAaccMAGnHRABpx6BAacfAgGXHEABlx0QAZceIQGXHwIB9xxRAfcdAQH3Hh8B9x+Q</data>
 					<key>FuncGroup</key>
@@ -120,7 +120,7 @@
 					<key>CodecID</key>
 					<integer>351359128</integer>
 					<key>Comment</key>
-					<string>CX20632 by Daniel</string>
+					<string>CX20632 - LayoutID 28 -  by Daniel</string>
 					<key>ConfigData</key>
 					<data>AfccEAH3HQEB9x4XAfcfkgH3DAIBpxwgAacdEAGnHosBpx8CAZccQAGXHRABlx4rAZcfAgHHHNABxx1AAcceIQHHHwIBhxzwAYcdAAGHHgABhx9AAbcc8AG3HQABtx4AAbcfQAHXHPAB1x0AAdceAAHXH0AB5xzwAecdAAHnHgAB5x9AAgcc8AIHHQACBx4AAgcfQAIXHPACFx0AAhceAAIXH0ACZxzwAmcdAAJnHgACZx9A</data>
 					<key>FuncGroup</key>
@@ -136,7 +136,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132, default</string>
+					<string>CA0132 - LayoutID 0 - Creative CA0132, default</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -150,7 +150,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132: Alienware 15 R2</string>
+					<string>CA0132 - LayoutID 1 - Creative CA0132: Alienware 15 R2</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -164,7 +164,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132: Alienware 17, Desktop 2xIn 3xOut</string>
+					<string>CA0132 - LayoutID 2 - Creative CA0132: Alienware 17, Desktop 2xIn 3xOut</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -178,7 +178,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132, 2.0 + rear line-out</string>
+					<string>CA0132 - LayoutID 3 - Creative CA0132, 2.0 + rear line-out</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -192,7 +192,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132: R3Di default</string>
+					<string>CA0132 - LayoutID 4 - Creative CA0132: R3Di default</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -206,9 +206,9 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132, 2.0 front HP + Mic </string>
+					<string>CA0132 - LayoutID 5 - Creative CA0132, 2.0 front HP + Mic </string>
 					<key>CodecID</key>
-					<integer>285343761</integer>
+					<real>285343761</real>
 					<key>ConfigData</key>
 					<data>ABcXHgAXFRIBVwoBAScIgQFnCIABVxcNAVcYIQC3HiEA1xzwANcdAADXHgAA1x9AAQceAQEXBwQBJx+Q</data>
 					<key>FuncGroup</key>
@@ -220,7 +220,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132, 5.1 with front HP</string>
+					<string>CA0132 - LayoutID 6 - Creative CA0132, 5.1 with front HP</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -234,7 +234,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132: ZxRi</string>
+					<string>CA0132 - LayoutID 7 - Creative CA0132: ZxRi</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -248,7 +248,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132 by Andres ZeroCross</string>
+					<string>CA0132 - LayoutID 9 - Creative CA0132 by Andres ZeroCross</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -262,7 +262,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132 by Andres ZeroCross</string>
+					<string>CA0132 - LayoutID 10 - Creative CA0132 by Andres ZeroCross</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -276,7 +276,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Custom Creative CA0132 5.1 channel</string>
+					<string>CA0132 - LayoutID 11 - Custom Creative CA0132 5.1 channel</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -290,7 +290,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Custom Creative CA0132</string>
+					<string>CA0132 - LayoutID 12 - Custom Creative CA0132</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -304,7 +304,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Creative CA0132 5.1 channel for Alienware-M17X-R4 by DalianSky</string>
+					<string>CA0132 - LayoutID 99 - Creative CA0132 5.1 channel for Alienware-M17X-R4 by DalianSky</string>
 					<key>CodecID</key>
 					<integer>285343761</integer>
 					<key>ConfigData</key>
@@ -318,9 +318,9 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>InsanelyDeepak - Cirrus Logic CS4210</string>
+					<string>CS4210 - LayoutID 13 - InsanelyDeepak - Cirrus Logic CS4210</string>
 					<key>CodecID</key>
-					<integer>269697552</integer>
+					<real>269697552</real>
 					<key>ConfigData</key>
 					<data>AFccEABXHUAAVx4hAFcfAABnHCAAZx0AAGceFwBnH5AAdxwwAHcdkAB3HoEAdx8AAJccQACXHQAAlx6gAJcfkA==</data>
 					<key>FuncGroup</key>
@@ -332,7 +332,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>InsanelyDeepak - Cirrus Logic -CS4213</string>
+					<string>CS4213 - LayoutID 28 - InsanelyDeepak - Cirrus Logic - CS4213</string>
 					<key>CodecID</key>
 					<integer>269697555</integer>
 					<key>ConfigData</key>
@@ -346,7 +346,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>MacPeet - AD1984 - for_IBM_Lenovo_ThinkPad_T61_T61p</string>
+					<string>AD1984 - LayoutID 11 - MacPeet - AD1984 - for_IBM_Lenovo_ThinkPad_T61_T61p</string>
 					<key>CodecID</key>
 					<integer>299112836</integer>
 					<key>ConfigData</key>
@@ -360,7 +360,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>MacPeet - AD1984A</string>
+					<string>AD1984A - LayoutID 11 - MacPeet - AD1984A</string>
 					<key>CodecID</key>
 					<integer>299112778</integer>
 					<key>ConfigData</key>
@@ -374,7 +374,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>MacPeet - AD1984A - Version2</string>
+					<string>AD1984A - LayoutID 13 - MacPeet - AD1984A - Version2</string>
 					<key>CodecID</key>
 					<integer>299112778</integer>
 					<key>ConfigData</key>
@@ -388,7 +388,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>AD1984A - giesteira</string>
+					<string>AD1984A - LayoutID 44 - giesteira</string>
 					<key>CodecID</key>
 					<integer>299112778</integer>
 					<key>ConfigData</key>
@@ -402,7 +402,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>AD1988A by chrome</string>
+					<string>AD1988A - LayoutID 12 - chrome</string>
 					<key>CodecID</key>
 					<integer>299112840</integer>
 					<key>ConfigData</key>
@@ -416,7 +416,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Mirone - ADI-1988B</string>
+					<string>AD1988B - LayoutID 5 - Mirone</string>
 					<key>CodecID</key>
 					<integer>299112843</integer>
 					<key>ConfigData</key>
@@ -430,7 +430,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Mirone - ADI-1988B</string>
+					<string>AD1988B - LayoutID 7 - Mirone</string>
 					<key>CodecID</key>
 					<integer>299112843</integer>
 					<key>ConfigData</key>
@@ -444,11 +444,9 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>0x11d4198b</string>
+					<string>AD1988B - LayoutID 12 - Rodion</string>
 					<key>CodecID</key>
 					<integer>299112843</integer>
-					<key>Comment</key>
-					<string>Custom AD1988B by Rodion</string>
 					<key>ConfigData</key>
 					<data>AXccIAF3HZABdx6gAXcfkQFHHCEBRx2QAUcegQFHHwIBJxwQAScdQAEnHhEBJx8BAkccEQJHHWACRx4RAkcfAQFnHBIBZx0QAWceEQFnHwECVxwUAlcdIAJXHhECVx8BAccc8AHHHQABxx4AAccfQAE3HPABNx0AATceAAE3H0ABpxzwAacdAAGnHgABpx9AAYcc8AGHHQABhx4AAYcfQA==</data>
 					<key>FuncGroup</key>
@@ -460,7 +458,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Mirone - ADI-2000B</string>
+					<string>AD2000B - LayoutID 5 - Mirone</string>
 					<key>CodecID</key>
 					<integer>299145371</integer>
 					<key>ConfigData</key>
@@ -474,7 +472,7 @@
 					<key>AFGLowPowerState</key>
 					<data>AwAAAA==</data>
 					<key>Codec</key>
-					<string>Mirone - ADI-2000B</string>
+					<string>AD2000B - LayoutID 7 - Mirone</string>
 					<key>CodecID</key>
 					<integer>299145371</integer>
 					<key>ConfigData</key>
